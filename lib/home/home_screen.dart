@@ -150,15 +150,19 @@ class _HomeScreenState extends State<HomeScreen> {
                   String email = txtEmail.text;
                   String mobile = txtMobile.text;
 
-                  dataList.add(name);
-                  dataList.add(email);
-                  dataList.add(mobile);
+               dataList[0]["name"]=name;
+               dataList[1]["email"]=email;
+               dataList[2]["moblie"]=mobile;
 
                   ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Data is saved")));
                   txtName.clear();
                   txtEmail.clear();
                   txtMobile.clear();
+                  setState(() {
+                    Navigator.pushNamed(context, 'product');
+                  });
                 }
+
               }, child: Text("Submit")
                         ),
                       ],
