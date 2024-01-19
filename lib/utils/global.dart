@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
 List<Map>dataList=[
-  {"name":""},{"email":""},{"moblie":""},
+  {"name":""},{"email":""},{"mobile":""},
 ];
 List<Map> productList=[
   {"name":"","price":0,"quantity":0,"text1":TextEditingController(),"text2":TextEditingController(),"text3":TextEditingController()}

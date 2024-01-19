@@ -27,7 +27,9 @@ class _CartScreenState extends State<CartScreen> {
                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Text("Invoice",style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold),),
-                  const SizedBox(height: 30,),
+                  const SizedBox(height: 15,),
+                  const Text("Personal Details",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20)),
+                  const SizedBox(height: 10,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -47,23 +49,27 @@ class _CartScreenState extends State<CartScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Text("Moblie",style: TextStyle(fontSize: 20)),
-                      Text("${dataList[2]['moblie']}",style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 18)),
+                      const Text("Mobile",style: TextStyle(fontSize: 20)),
+                      Text("${dataList[2]['mobile']}",style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 18)),
                     ],
                   ),
                   const SizedBox(height: 5,),
                   const Divider(),
+                  const Text("purchase items",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
+                  const SizedBox(height: 20,),
                   Column(
                       children:List.generate(productList.length, (index) => Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("Name:${productList[index]["name"]}\n",style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
-                          Text("Price:\$${productList[index]["price"]}\n",style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
-                          Text("Net Quantity:${productList[index]["quantity"]}\n",style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
+                          Text("Name:${productList[index]["name"]}\n",style: const TextStyle(fontSize: 18),),
+                          Text("Price:\$${productList[index]["price"]}\n",style: const TextStyle(fontSize: 18),),
+                          Text("Net Quantity:${productList[index]["quantity"]}\n",style: const TextStyle(fontSize: 18),),
                         ],
-                      ))
+                      ),
+                      )
                   ),
-                  SizedBox(height: 10,),
+                  const SizedBox(height: 5,),
+                  const Divider(),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -99,7 +105,7 @@ class _CartScreenState extends State<CartScreen> {
                 createPDF();
               });
              },
-           child: Icon(Icons.save),
+           child: const Icon(Icons.save),
           ),
 
     )

@@ -98,9 +98,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         const SizedBox(
                           height: 20,
                         ),
-                        Align(
+                        const Align(
                           alignment: Alignment.centerLeft,
-                          child: const Text(
+                          child: Text(
                             "Profile Picture",
                             style: TextStyle(fontSize: 18),
 
@@ -121,7 +121,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     backgroundColor: Colors.black26,
                                     backgroundImage: FileImage(File(path))),
                                 Align(
-                                  alignment: Alignment(1.5,1),
+                                  alignment: const Alignment(1.5,1),
                                   child: IconButton(
                                     onPressed: () async {
                                       ImagePicker piker = ImagePicker();
@@ -141,7 +141,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ),
                         ),
-              SizedBox(height: 20,),
+              const SizedBox(height: 20,),
               ElevatedButton(onPressed: () {
                 FocusScope.of(context).unfocus();
                 if(key.currentState!.validate())
@@ -152,9 +152,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
                dataList[0]["name"]=name;
                dataList[1]["email"]=email;
-               dataList[2]["moblie"]=mobile;
+               dataList[2]["mobile"]=mobile;
 
-                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Data is saved")));
+                  ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Data is saved")));
                   txtName.clear();
                   txtEmail.clear();
                   txtMobile.clear();
@@ -163,7 +163,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   });
                 }
 
-              }, child: Text("Submit")
+              }, child: const Text("Submit")
                         ),
                       ],
                     ),
