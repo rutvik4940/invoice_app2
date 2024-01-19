@@ -63,7 +63,7 @@ Future<void> createPDF() async {
               mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
               children: [
                 pw.Text("Total",style: pw.TextStyle(fontSize: 18)),
-                pw.Text("$total",style:  pw.TextStyle(fontWeight: pw.FontWeight.bold,fontSize: 18)),
+                pw.Text("\$$total",style:  pw.TextStyle(fontWeight: pw.FontWeight.bold,fontSize: 18)),
               ],
             ),
             pw.SizedBox(height: 20,),
@@ -79,7 +79,7 @@ Future<void> createPDF() async {
               mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
               children: [
                 pw.Text("net_total price",style: pw.TextStyle(fontSize: 18)),
-                pw.Text("$gst",style:  pw.TextStyle(fontWeight: pw.FontWeight.bold,fontSize: 18)),
+                pw.Text("\$$gst",style:  pw.TextStyle(fontWeight: pw.FontWeight.bold,fontSize: 18)),
               ],
             ),
             pw. SizedBox(height: 5,),
