@@ -32,7 +32,7 @@ class _CartScreenState extends State<CartScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       const Text("Client",style: TextStyle(fontSize: 20)),
-                      Text("${dataList[0]['name']}",style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 18)),
+                      Text("${dataList[0]['name']}",style: const TextStyle(fontWeight: FofontSize: 18)),
                     ],
                   ),
                   const SizedBox(height: 20,),
@@ -57,9 +57,9 @@ class _CartScreenState extends State<CartScreen> {
                       children:List.generate(productList.length, (index) => Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("Name:${productList[index]["name"]}\n",style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
-                          Text("Price:\$${productList[index]["price"]}\n",style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
-                          Text("Net Quantity:${productList[index]["quantity"]}\n",style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
+                          Text("Name:${productList[index]["name"]}\n",style: const TextStyle(fontSize: 15),),
+                          Text("Price:\$${productList[index]["price"]}\n",style: const TextStyle(fontSize: 15),),
+                          Text("Net Quantity:${productList[index]["quantity"]}\n",style: const TextStyle(fontSize: 15),),
                         ],
                       ))
                   ),
