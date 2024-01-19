@@ -90,7 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             return null;
                           },
                           controller: txtMobile,
-                          keyboardType: TextInputType.phone,
+                          keyboardType: TextInputType.number,
                           decoration: const InputDecoration(
                               label: Text("Mobile number"),
                               prefixIcon: Icon(Icons.phone_android_outlined)),

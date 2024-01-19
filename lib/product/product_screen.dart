@@ -38,6 +38,7 @@ class _ProductScreenState extends State<ProductScreen> {
                      const SizedBox(width: 10,),
                      Expanded(
                        child: TextFormField(
+                         keyboardType: TextInputType.number,
                          controller:productList[index]["text2"] ,
                          decoration: const InputDecoration(
                            hintText: "Price",
@@ -47,6 +48,7 @@ class _ProductScreenState extends State<ProductScreen> {
                      const SizedBox(width: 10,),
                      Expanded(
                        child: TextFormField(
+                         keyboardType: TextInputType.number,
                          controller:productList[index]["text3"] ,
                          decoration: const InputDecoration(
                            hintText: "Quantity",
