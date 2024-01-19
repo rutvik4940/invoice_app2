@@ -74,7 +74,7 @@ class _CartScreenState extends State<CartScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       const Text("Total",style: TextStyle(fontSize: 18)),
-                      Text("$total",style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 18)),
+                      Text("\$$total",style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 18)),
                     ],
                   ),
                   const SizedBox(height: 20,),
@@ -90,7 +90,7 @@ class _CartScreenState extends State<CartScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       const Text("net_total price",style: TextStyle(fontSize: 18)),
-                      Text("$gst",style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 18)),
+                      Text("\$$gst",style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 18)),
                     ],
                   ),
                   const SizedBox(height: 5,),

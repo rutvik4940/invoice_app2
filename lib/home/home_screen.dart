@@ -116,7 +116,10 @@ class _HomeScreenState extends State<HomeScreen> {
                             child: Stack(
                               fit: StackFit.loose,
                               children: [
-                                CircleAvatar(
+                               path.isEmpty? CircleAvatar(
+                                 radius: 60,
+                                 backgroundColor: Colors.black26,
+                               ):CircleAvatar(
                                     radius: 60,
                                     backgroundColor: Colors.black26,
                                     backgroundImage: FileImage(File(path))),
