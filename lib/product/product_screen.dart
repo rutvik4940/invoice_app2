@@ -86,7 +86,6 @@ class _ProductScreenState extends State<ProductScreen> {
                       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Your Data Is Updated"),));
                       Navigator.pushNamed(context, 'cart');
                     });
-
                   }, child: Text("SUBMIT")),
                 ),
                ]
