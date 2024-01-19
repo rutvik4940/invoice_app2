@@ -24,7 +24,7 @@ samples, guidance on mobile development, and a full API reference.
  height="400px" width="200px" />
   <img src="https://github.com/rutvik4940/invoice_app2/assets/153794371/decc0a49-6db8-4f50-bd0a-80096c540f38"
  height="400px" width="200px" />
-  <img src="https://github.com/rutvik4940/invoice_app2/assets/153794371/917acf5b-e729-4a1d-a040-aa0fe8a27a27"
+  <img src="https://github.com/rutvik4940/invoice_app2/assets/153794371/bb2a8a70-ac43-4d3b-be75-8661f7cbe040"
  height="400px" width="200px" />
 
 https://github.com/rutvik4940/invoice_app2/assets/153794371/9dd26aac-80f2-43c0-aeff-9fe77d26aaf6
